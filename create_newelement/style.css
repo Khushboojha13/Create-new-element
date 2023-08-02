@@ -1,0 +1,142 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.main{
+    width:100%;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+.top{
+    width:100%;
+    min-height:9vh;
+    justify-content: space-between;
+    padding:0 25px;
+    display:flex;
+    /*justify-content: center; */
+    align-items: center;
+    background-color: rgb(47, 47, 49);
+}
+
+img{
+    width:10%;
+    height:10%;
+}
+img{
+    display:none;
+}
+h1{
+    font-size: 1.7vmax;
+    color:white;
+}
+ul{
+    display:flex;
+    gap:5vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+li{
+    list-style: none;
+    font-size: 1.3vw;
+    font:600;
+    cursor:pointer;
+    color:white;
+}
+button{
+        padding-inline: 1.5vw;
+        padding-block: 1.5vh;
+        background-color: blue;
+        font-size: 1.3vmax;
+        border-radius: 10px;
+        cursor:pointer;
+}
+.top button{
+    color:aliceblue;
+}
+.bottom{
+    width:100%;
+    min-height:91vh;
+    display:flex;
+}
+.box1{
+    width:50%;
+    min-height:inherit;
+    background-image: url("blake-connally-B3l0g6HLxr8-unsplash.jpg");
+    background-size: cover;
+    background-position: 30% 60%;
+    opacity: 0.9;
+
+}
+.para{
+    margin-inline: auto;
+    align-items: center;
+    width:60%;
+    margin-top: 8vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    color: aliceblue;
+}
+.box1 .para p{
+    font-size: 2vmax;
+    font-weight: 600;
+    margin-bottom: 4vh;
+}
+span{
+    color:blue;
+}
+.box2{
+    width:50%;
+    min-height:inherit;
+    background-color: rgb(218, 95, 18);
+}
+
+#create{
+    border:2px solid black;
+    width: 60%;
+    height:50vh;
+    margin-inline: auto;
+    margin-top:8vh ;
+    border:3px solid white;
+    border-radius: 6px;
+}
+.box2  p,h2{
+    font-size: 1.7vmax;
+    text-align: center;
+    margin-top:7vh;
+    font-weight: 600;
+    color:whitesmoke;
+}
+
+@media(max-width:600px){
+    h1{
+        font-size: 3vw;
+    }
+    .bottom{
+        display:flex;
+        flex-direction: column;
+    }
+    .box1{
+        width:100%;
+    }
+    .box2{
+        width:100%;
+    }
+    li{
+        display:none;
+    }
+    .top button{
+        display:none;
+    }
+    .box1{
+    background-image: url("blake-connally-B3l0g6HLxr8-unsplash.jpg");
+    background-size: cover;
+    background-position: 40% 10%;
+    opacity: 0.9;
+}
+.para{
+    margin-top: 17vh;
+}
+}
